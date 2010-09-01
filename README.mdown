@@ -1,0 +1,25 @@
+Crane is still in development, so this README represents a goal for 1.0. Send me a message if you have questions or suggestions for this project while it's spinning up.
+
+- - -
+
+# What is Crane? #
+
+I'm glad you asked! Crane is a lightweight installation framework for Mac applications. Developers build Crane into their applications, and it springs into action when the application is launched from a downloads folder or disk image.
+
+If your application is installed today by adding it to the Applications folder, it's a perfect candidate for Crane.
+
+# But, what does Crane *do*? #
+
+Ah, good question. When your application launches, Crane detects if it's running from the installation disk image or common download folders and offers to install it.
+
+When the user clicks Install, Crane copies your application to the computer's Applications folder, launches it, and optionally moves the installer to the trash.
+
+# That sounds easy enough. Why shouldn't I write a custom installer for my own application? #
+
+You're right, the basic idea behind Crane is simple. But you should use it instead of writing your own installer for two reasons:
+
+1. Most users haven't heard of [Sparkle](http://sparkle.andymatuschak.org/), but they've used it: is powers [many popular Mac applications'](http://osx.iusethis.com/top?sparkle=1) software update functionality. As soon as a user sees the familiar update dialog in a new application, they know what to expect from the update process.
+
+   If a user has ever installed a Crane-enabled application before, they know what to expect when installing yours.
+
+1. When you roll your own install helper, you may end up fixing the same bug that 20 other developers have worked on in theirs. When you use Crane, you get everyone's fixes and improvements for free.
